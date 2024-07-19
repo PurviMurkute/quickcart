@@ -1,0 +1,16 @@
+.row{
+    background-color: rgb(237, 237, 227);
+}
+.card-img{
+    height: 350px;
+    width: 250px;
+}
+
+.card-img:hover{
+    border: 1px solid rgb(116, 196, 227) !important;
+    transition: 0.5s;
+    background-color: rgb(45, 101, 123)  !important;
+}
+
+
+

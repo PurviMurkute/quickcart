@@ -1,0 +1,14 @@
+
+.fas-title{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 0 auto;
+}
+
+.para{
+    font-family: 'Times New Roman', Times, serif;
+}
+.women-fashion-container:hover{
+    transition: 0.5s;
+    background-color: rgb(45, 101, 123) !important;
+}
