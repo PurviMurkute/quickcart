@@ -55,11 +55,11 @@ const router = createBrowserRouter([
         element : <HomeDecor />
     },
     {
-        path : "/women",
+        path : "/womens",
         element : <WomenFashion />
     },
     {
-        path: "/men",
+        path: "/mens",
         element: <MenFashion />
     }
 ])

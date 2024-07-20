@@ -12,3 +12,8 @@
     transition: 0.5s;
     background-color: rgb(45, 101, 123) !important;
 }
+
+.atc-btn:hover{
+    background-color: rgb(45, 101, 123) ;
+    color: #fff;
+}

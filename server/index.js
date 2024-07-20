@@ -4,6 +4,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 dotenv.config()
 import { getHealth, postOffer, getOffers } from './Controllers/offerapi.js';
+import { postWomen, getWomen } from './Controllers/women.js';
+import { postMens, getMens } from './Controllers/men.js';
 
 const app = express();
 app.use(cors());
@@ -28,6 +30,14 @@ app.get('/health', getHealth)
 app.post('/offer', postOffer)
 
 app.get('/offers', getOffers)
+
+app.post('/women', postWomen)
+
+app.get('/womens', getWomen)
+
+app.post('/men', postMens)
+
+app.get('/mens', getMens)
 
 app.listen(PORT, ()=>{
     console.log(`server is running on PORT ${PORT}`)

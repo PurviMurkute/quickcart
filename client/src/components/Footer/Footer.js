@@ -6,7 +6,7 @@ function Footer() {
         <div>
             <footer className='row mt-5 p-3 row-cols-1 row-cols-sm-1 row-cols-md-4' style={{ backgroundColor: 'rgb(83, 155, 183)' }}>
                 <div className='col'>
-                    <h3 className='my-2 mx-3 d-flex justify-content-center link-body-emphasis'>Discover the story behind our brand & what drives us to deliver the best to our customers.</h3>
+                    <h4 className='my-2 mx-3 d-flex justify-content-center link-body-emphasis'>Discover the story behind our brand & what drives us to deliver the best to our customers.</h4>
                 </div>
                 <div className='col'>
                     <h4 className='my-2 mx-3'>
