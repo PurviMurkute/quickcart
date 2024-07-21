@@ -25,7 +25,7 @@ const dbConnection = async () => {
 }
 dbConnection();
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 app.get('/health', getHealth)
 
