@@ -1,8 +1,60 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import Footer from '../../Footer/Footer';
 
 function Shoes() {
+
+  const [shoes, setShoes] = useState([])
+
+  const loadShoes = async () => {
+    const response = await axios.get(`${process.env.REACT_APP_API_URL}/shoes`)
+
+    setShoes(response.data.data)
+  }
+
+  useEffect(() => {
+    loadShoes()
+  }, [])
+
   return (
-    <div>Shoes</div>
+    <div>
+      <div className='' style={{ height: '25px', backgroundColor: 'rgb(83, 155, 183)' }}></div>
+      <h4 className='p-3 mt-5 text-center' style={{ color: "rgb(45, 101, 123)" }}>Shoes</h4>
+
+      <div className=''>
+        <div className='row' style={{ backgroundColor: "rgb(83, 155, 183)" }}>
+          {shoes.map((shoescard, i) => (
+            <div key={i} className="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-4 mx-5">
+              <ShoesCard
+                image={shoescard.image}
+                title={shoescard.title}
+                brand={shoescard.brand}
+                price={shoescard.price}
+              />
+            </div>
+          ))
+          }
+        </div>
+      </div><br/><br/>
+      <Footer />
+    </div>
+  );
+};
+
+const ShoesCard = ({ image, title, brand, price }) => {
+
+  return (
+
+    <div className='card h-100 '>
+        <img src={image} alt='shoesimg' className='card-image-top' height='200px' style={{ objectFit: 'cover' }} />
+        <div className='card-body'>
+          <h4 className='card-title text-center'>{title}</h4>
+          <p className='card-text text-center'>{brand}</p>
+          <h5 className='card-text text-center'>₹{price}</h5>
+          <button type='button' className='atc-btn d-block my-0 mx-auto mt-3 border border-0 py-1 px-2 my-1 mx-3 rounded' style={{ backgroundColor: "rgb(83, 155, 183)" }}>Add to card</button>
+        </div>
+      </div>
+    
   )
 }
 

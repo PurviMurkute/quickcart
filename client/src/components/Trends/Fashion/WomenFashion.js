@@ -21,9 +21,9 @@ function WomenFashion() {
   return (
     <div>
       <div style={{ height: '25px', backgroundColor: 'rgb(83, 155, 183)' }}></div>
-      <h4 className="w-title p-3 m-5 text-center" style={{ color: "rgb(45, 101, 123)" }}>Womens Fashion</h4>
-      <div className="container">
-        <div className="row" style={{ backgroundColor: "rgb(83, 155, 183)" }}>
+      <h4 className="w-title p-3 mt-5 text-center" style={{ color: "rgb(45, 101, 123)" }}>Womens Fashion</h4>
+      <div className="">
+        <div className="row px-5" style={{ backgroundColor: "rgb(83, 155, 183)" }}>
           {womens.map((women, i) => (
             <div key={i} className="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-4">
               <WomenFashionItem
@@ -44,7 +44,7 @@ function WomenFashion() {
 const WomenFashionItem = ({ image, title, description, price }) => {
   return (
     <div className="card h-100">
-      <img src={image} alt="womenfashion" className="card-img-top" height="200px" style={{ objectFit: 'cover' }} />
+      <img src={image} alt="womenfashion" className="card-img-top" height="250px" style={{ objectFit: 'cover' }} />
       <div className="card-body">
         <h4 className="card-title">{title}</h4>
         <p className="card-text">{description}</p>

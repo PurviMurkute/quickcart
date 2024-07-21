@@ -13,6 +13,7 @@ import Watches from "./components/Trends/Watches/Watches";
 import HomeDecor from "./components/Trends/HomeDecor/HomeDecor";
 import WomenFashion from "./components/Trends/Fashion/WomenFashion";
 import MenFashion from "./components/Trends/Fashion/MenFashion";
+import './global.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
