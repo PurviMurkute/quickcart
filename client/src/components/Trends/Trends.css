@@ -1,16 +1,20 @@
-.row{
-    background-color: rgb(237, 237, 227);
+.trend-cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 50px 150px;
 }
 .card-img{
-    height: 350px;
-    width: 250px;
+    height: 330px;
+    width: 240px;
 }
 
 .card-img:hover{
+    height: 335px;
+    width: 245px;
     border: 1px solid rgb(116, 196, 227) !important;
     transition: 0.5s;
     background-color: rgb(45, 101, 123)  !important;
 }
-
 
 

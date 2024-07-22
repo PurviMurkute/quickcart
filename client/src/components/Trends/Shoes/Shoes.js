@@ -22,9 +22,9 @@ function Shoes() {
       <h4 className='p-3 mt-5 text-center' style={{ color: "rgb(45, 101, 123)" }}>Shoes</h4>
 
       <div className=''>
-        <div className='row' style={{ backgroundColor: "rgb(83, 155, 183)" }}>
+        <div className='row px-5' style={{ backgroundColor: "rgb(83, 155, 183)" }}>
           {shoes.map((shoescard, i) => (
-            <div key={i} className="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-4 mx-5">
+            <div key={i} className="col-12 col-sm-6 col-md-3 my-4">
               <ShoesCard
                 image={shoescard.image}
                 title={shoescard.title}
@@ -46,7 +46,7 @@ const ShoesCard = ({ image, title, brand, price }) => {
   return (
 
     <div className='card h-100 '>
-        <img src={image} alt='shoesimg' className='card-image-top' height='200px' style={{ objectFit: 'cover' }} />
+        <img src={image} alt='shoesimg' className='card-image-top' height='270px' style={{ objectFit: 'cover' }} />
         <div className='card-body'>
           <h4 className='card-title text-center'>{title}</h4>
           <p className='card-text text-center'>{brand}</p>

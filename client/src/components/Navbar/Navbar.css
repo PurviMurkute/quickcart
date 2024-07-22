@@ -11,3 +11,20 @@
     background-color: rgb(45, 101, 123) !important;
     color: #fff !important;
 }
+
+@media screen and (max-width: 600px){
+    .shop-logo{
+        width: 40px;
+        margin: 0 20px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    .nav-item{
+        margin: 5px 10px;
+        padding: 2px 5px;
+    }
+}
