@@ -1,7 +1,65 @@
-
 .card-title,
 .card-text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.input-box {
+  display: block;
+  margin: 20px auto;
+  width: 90%;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.user-form {
+  width: 300px;
+  border: 3px solid rgb(45, 101, 123);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  display: block;
+  margin: 50px auto;
+  border-radius: 5px;
+  background-color: rgb(123, 167, 185);
+}
+
+.reg-heading {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(25, 75, 95);
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: rgb(45, 101, 123);
+  padding: 4px 15px;
+  border-radius: 15px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.btn:hover {
+  padding: 5px 17px;
+}
+
+.link {
+  font-size: 15px;
+  display: block;
+  margin: 10px auto;
+  color: rgb(25, 75, 95);
+}
+
+.user-container {
+  background-image: url(bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -8,6 +8,13 @@ import { postWomen, getWomen } from './Controllers/women.js';
 import { postMens, getMens } from './Controllers/men.js';
 import { getSkincare, postSkincare } from './Controllers/skincare.js';
 import { getShoes, postShoes } from './Controllers/shoes.js';
+import { getHairCare, postHairCare } from './Controllers/haircare.js';
+import { getAccesories, postAccesories } from './Controllers/accesories.js';
+import { getWatches, postWatches } from './Controllers/watches.js';
+import { getMakeup, postMakeup } from './Controllers/makeup.js';
+import { getHomeDecor, postHomeDecor } from './Controllers/homedecor.js';
+import { getContact, postContact } from './Controllers/contact.js';
+import { postLogin, postSignup } from './Controllers/user.js';
 
 const app = express();
 app.use(cors());
@@ -48,6 +55,35 @@ app.get('/skincare', getSkincare)
 app.post('/shoesitem', postShoes )
 
 app.get('/shoes', getShoes)
+
+app.post('/haircareitem', postHairCare)
+
+app.get('/haircare', getHairCare)
+
+app.post('/accesoriesitem', postAccesories)
+
+app.get('/accesories', getAccesories)
+
+app.post('/watch', postWatches)
+
+app.get('/watches', getWatches)
+
+app.post('/makeupproduct', postMakeup)
+
+app.get('/makeup', getMakeup)
+
+app.post('/homedecoritem', postHomeDecor)
+
+app.get('/homedecor', getHomeDecor)
+
+app.post('/contact', postContact)
+
+app.get('/contacts', getContact)
+
+app.post('/signup', postSignup)
+
+app.post('/login', postLogin)
+
 
 app.listen(PORT, ()=>{
     console.log(`server is running on PORT ${PORT}`)

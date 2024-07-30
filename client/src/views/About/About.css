@@ -1,0 +1,39 @@
+.about-content{
+    position: relative;
+}
+
+.div{
+    height: 250px;
+    background-color: rgb(83, 155, 183);
+}
+
+.about-heading{
+    position: absolute;
+    top: 70px;
+    right: 46%;
+    left: 46%;
+}
+
+.about-img{
+    height: 250px;
+    width: 450px;
+}
+
+.img-p-container{
+    position: absolute;
+    top: 130px;
+    right: 35%;
+    left: 35%;
+}
+
+.about-para{
+    text-align: justify;
+}
+
+.greeting-para{
+    margin-top: 420px;
+    background-color: rgb(83, 155, 183);
+    padding: 20px 40px;
+    color: white;
+    text-align: center;
+}

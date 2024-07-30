@@ -12,6 +12,14 @@
     color: #fff !important;
 }
 
+.home-logout{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
 @media screen and (max-width: 600px){
     .shop-logo{
         width: 40px;
