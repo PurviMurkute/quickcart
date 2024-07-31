@@ -1,4 +1,4 @@
-import Accesories from "../models/accesories.js";
+import Accesories from "../models/Accesories.js";
 
 const postAccesories = async (req, res) => {
     const {
