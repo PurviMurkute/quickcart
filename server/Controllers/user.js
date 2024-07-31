@@ -53,6 +53,28 @@ const postLogin = async (req, res) => {
     }
 }
 
+const getUser = async (req, res) => {
+    const { userId } = req.query;
+
+    const user = await User.findById(userId)
+
+    if(!user){
+        return res.json({
+            success: false,
+            message: "user not found",
+            data: null
+        })
+    }
+
+    const users = await User.find({ user: userId }).sort({ createdAt: -1});
+
+    res.json({
+        success: true,
+        message: "Signup successful",
+        data: users
+    })
+}
+
 export {
     postSignup,
     postLogin

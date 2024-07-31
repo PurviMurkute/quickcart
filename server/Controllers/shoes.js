@@ -1,4 +1,4 @@
-import Shoes from "../models/shoes.js";
+import Shoes from "../models/Shoes.js";
 
 const postShoes = async (req, res) => {
     const {
