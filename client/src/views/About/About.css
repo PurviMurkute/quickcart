@@ -37,3 +37,33 @@
     color: white;
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+    .div{
+        height: 200px !important;
+    }
+    .about-heading{
+        right: 10% !important;
+        left: 40% !important;
+    }
+    .about-img{
+        height: 150px;
+        width: 250px;
+        margin-top: -10px;
+    }
+    .img-p-container{
+        right: 22%;
+        left: 22%;
+    }
+    .about-para{
+        font-size: 12px !important;
+        margin-top: -5px;
+    }
+    .greeting-para{
+        margin-top: 380px;
+        padding: 10px 20px;
+    }
+    .gree-p{
+        font-size: 15px !important;
+    }
+}

@@ -19,7 +19,7 @@ function About() {
           <h6 className='about-para'><i>At QUICKCART, we believe in the power of choice. That's why we carefully curate our collections to ensure you find exactly what you're looking for, whether it's the latest trends in fashion, cutting-edge technology, or unique items to enhance your home. Our dedicated team is always here to help, from guiding you through your purchase to ensuring timely delivery and providing excellent after-sales support.</i></h6>
         </div>
         <div className='greeting-para'>
-          <h5>We are not just a store; we are a community of like-minded individuals who share a love for quality products and exceptional service. Thank you for choosing QUICKCART. We look forward to serving you and making your shopping experience truly extraordinary.</h5>
+          <h5 className='gree-p'>We are not just a store; we are a community of like-minded individuals who share a love for quality products and exceptional service. Thank you for choosing QUICKCART. We look forward to serving you and making your shopping experience truly extraordinary.</h5>
         </div>
       </div>
       <Footer />

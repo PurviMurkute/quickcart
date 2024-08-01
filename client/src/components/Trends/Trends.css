@@ -20,21 +20,25 @@
 @media screen and (max-width: 600px) {
     .popular-title{
         margin-top: 40px !important;
-        margin-left: 60px !important;
+        margin-left: 50px !important;
         font-size: 15px;
     }
     .card-img{
-        width: 180px;
-        height: 270px;
+        width: 155px;
+        height: 240px;
     }
     .trend-cards{
-        padding: 10px !important;
+        padding: 5px !important;
     }
     .popular-cards{
         margin: 2px 5px;
     }
     .popular-container{
         padding: 0 22px !important;
+    }
+    .card-img:hover{
+        width: 160px;
+        height: 245px;
     }
 }
 
