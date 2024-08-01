@@ -38,6 +38,9 @@ function Signup() {
 
   return (
     <div className='user-container'>
+      <div className='div'></div>
+      <h4 className='greetings'><b>Welcome! Let's Get You Registered</b></h4>
+      <div>
       <form className='user-form'>
         <h1 className='reg-heading'>Register Now</h1>
         <label for="name">Name:</label>
@@ -80,6 +83,7 @@ function Signup() {
         </button>
         <Link to='/login' className='link'>Already have an account? Login</Link>
       </form>
+      </div>
       <Toaster />
     </div>
   )

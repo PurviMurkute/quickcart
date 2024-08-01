@@ -17,4 +17,25 @@
     background-color: rgb(45, 101, 123)  !important;
 }
 
+@media screen and (max-width: 600px) {
+    .popular-title{
+        margin-top: 40px !important;
+        margin-left: 60px !important;
+        font-size: 15px;
+    }
+    .card-img{
+        width: 180px;
+        height: 270px;
+    }
+    .trend-cards{
+        padding: 10px !important;
+    }
+    .popular-cards{
+        margin: 2px 5px;
+    }
+    .popular-container{
+        padding: 0 22px !important;
+    }
+}
+
 

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Offer.css';
 
 function Offers({image, logo, category, discount}) {
 
