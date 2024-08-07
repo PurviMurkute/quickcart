@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./views/Home/Home";
 import Fashion from "./components/Trends/Fashion/Fashion";
@@ -19,50 +19,50 @@ import Signup from "./views/User-access/Signup";
 import Login from "./views/User-access/Login";
 
 import './global.css';
-
+import Order from "./views/BuyNow/Order";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const router = createBrowserRouter([
     {
-        path : "/",
-        element : <Home />
+        path: "/",
+        element: <Home />
     },
     {
-        path : "/fashion",
-        element : <Fashion />
+        path: "/fashion",
+        element: <Fashion />
     },
     {
-        path : "/skincare",
-        element : <SkinCare />
+        path: "/skincare",
+        element: <SkinCare />
     },
     {
-        path : "/shoes",
-        element : <Shoes />
+        path: "/shoes",
+        element: <Shoes />
     },
     {
-        path : "/haircare",
-        element : <HairCare />
+        path: "/haircare",
+        element: <HairCare />
     },
     {
-        path : "/accesories",
-        element : <Accessories />
+        path: "/accesories",
+        element: <Accessories />
     },
     {
-        path : "/makeup",
-        element : <MakeUp />
+        path: "/makeup",
+        element: <MakeUp />
     },
     {
-        path : "/watches",
-        element : <Watches />
+        path: "/watches",
+        element: <Watches />
     },
     {
-        path : "/homedecor",
-        element : <HomeDecor />
+        path: "/homedecor",
+        element: <HomeDecor />
     },
     {
-        path : "/womens",
-        element : <WomenFashion />
+        path: "/womens",
+        element: <WomenFashion />
     },
     {
         path: "/mens",
@@ -78,12 +78,17 @@ const router = createBrowserRouter([
     },
     {
         path: "/signup",
-        element: <Signup/>
+        element: <Signup />
     },
     {
         path: "/login",
-        element: <Login/>
+        element: <Login />
+    },
+    {
+        path: "/order",
+        element: <Order/>
     }
+
 ])
 
 root.render(<RouterProvider router={router} />)

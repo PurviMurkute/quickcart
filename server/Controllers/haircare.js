@@ -36,6 +36,9 @@ const getHairCare = async (req, res) => {
     })
 }
 
+const getHCid = async (req, res) => {
+    
+}
 export {
     postHairCare,
     getHairCare

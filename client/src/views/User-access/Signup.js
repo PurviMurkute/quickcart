@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import toast, {Toaster} from 'react-hot-toast';
 import { Link } from 'react-router-dom';
+import Footer from '../../components/Footer/Footer';
+import Navbar from '../../components/Navbar/Navbar';
 
 
 function Signup() {
@@ -38,6 +40,7 @@ function Signup() {
 
   return (
     <div className='user-container'>
+      <Navbar/>
       <div className='div'></div>
       <h4 className='greetings'><b>Welcome! Let's Get You Registered</b></h4>
       <div>
@@ -85,6 +88,7 @@ function Signup() {
       </form>
       </div>
       <Toaster />
+      <Footer/>
     </div>
   )
 }

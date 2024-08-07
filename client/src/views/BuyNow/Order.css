@@ -1,0 +1,23 @@
+.contact-heading {
+    color: rgb(25, 75, 95);
+    text-align: center;
+
+}
+
+.contact-form {
+    width: 320px;
+    border: 3px solid rgb(45, 101, 123);
+    padding: 20px;
+    display: block;
+    margin-top: -70px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: rgb(123, 167, 185);
+}
+
+.contact-msg{
+    position: absolute;
+    top: 80px;
+    margin-left: 40%;
+}

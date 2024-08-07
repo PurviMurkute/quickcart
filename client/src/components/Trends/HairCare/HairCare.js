@@ -53,7 +53,7 @@ const HairCareitems = ({ image, title, quantity, category, price }) => {
           <p className='card-text text-center'>({quantity})</p>
           <p className='card-text text-center'>{category}</p>
           <h5 className='card-text text-center'>₹{price}</h5>
-          <button type='button' className='atc-btn d-block my-0 mx-auto mt-3 border border-0 py-1 px-2 my-1 mx-3 rounded' style={{ backgroundColor: "rgb(83, 155, 183)" }}>Add to card</button>
+          <button type='button' className='atc-btn d-block my-0 mx-auto mt-3 border border-0 py-1 px-2 my-1 mx-3 rounded' style={{ backgroundColor: "rgb(83, 155, 183)" }}>Buy Now</button>
         </div>
       </div>
     

@@ -33,6 +33,7 @@ const getAccesories = async (req, res) => {
         message: "All Accesories fetched successfully"
     })
 }
+
 export {
     postAccesories,
     getAccesories

@@ -49,7 +49,7 @@ const WomenFashionItem = ({ image, title, description, price }) => {
         <h4 className="card-title">{title}</h4>
         <p className="card-text">{description}</p>
         <h5 className="card-text text-center">₹{price}</h5>
-        <button type='button' className='atc-btn d-block my-0 mx-auto mt-3 border border-0 py-1 px-2 my-1 mx-3 rounded' style={{ backgroundColor: "rgb(83, 155, 183)" }}>Add to card</button>
+        <button type='button' className='atc-btn d-block my-0 mx-auto mt-3 border border-0 py-1 px-2 my-1 mx-3 rounded' style={{ backgroundColor: "rgb(83, 155, 183)" }}>Buy Now</button>
       </div>
     </div>
   );

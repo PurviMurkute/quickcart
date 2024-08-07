@@ -4,22 +4,32 @@ import './Navbar.css';
 import toast, { Toaster } from 'react-hot-toast';
 
 function Navbar() {
-  const [user, setUser] = useState(null);
+  const [currentUser, setcurrentUser] = useState('');
 
   useEffect(() => {
-    const userData = localStorage.getItem('user');
-    if (userData) {
-      console.log('User data found:', userData);
-      setUser(JSON.parse(userData));
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'))
+
+    if (currentUser) {
+      setcurrentUser(currentUser)
     }
-  }, []);
+  }, [])
 
   const handleLogout = () => {
-    localStorage.clear();
-    toast.success('Logged out successfully');
-    setTimeout(() => {
-      window.location.href = '/login';
-    }, 3000);
+    if (currentUser) {
+      localStorage.clear();
+      toast.success('Logged out successfully');
+      setTimeout(() => {
+        window.location.href = '/login';
+      }, 3000);
+    }
+  };
+
+  const handleLogin = () => {
+    if (!currentUser) {
+      setTimeout(() => {
+        window.location.href = '/login';
+      }, 3000);
+    }
   };
 
   return (
@@ -27,10 +37,10 @@ function Navbar() {
       <nav className='navbar fixed-top d-flex justify-content-start shadow py-1' style={{ backgroundColor: "rgb(83, 155, 183)" }}>
         <img src='q.png' alt='logo' className='shop-logo' />
         <Link to='/' className='nav-item bg-dark mt-3 mx-5 py-0 px-2 rounded text-decoration-none' style={{ color: 'rgb(116, 196, 227)' }}>Home</Link>
-        <Link to='/About' className='nav-item bg-dark mt-3 mx-5 py-0 px-2 rounded text-decoration-none' style={{ color: 'rgb(116, 196, 227)' }}>About</Link>
-        <Link to='/Contact' className='nav-item bg-dark mt-3 mx-5 rounded py-0 px-2 text-decoration-none' style={{ color: 'rgb(116, 196, 227)' }}>Contact</Link>
-        {!user ? (
-          <Link to='/login' className='home-logout'>
+        <Link to='/about' className='nav-item bg-dark mt-3 mx-5 py-0 px-2 rounded text-decoration-none' style={{ color: 'rgb(116, 196, 227)' }}>About</Link>
+        <Link to='/contact' className='nav-item bg-dark mt-3 mx-5 rounded py-0 px-2 text-decoration-none' style={{ color: 'rgb(116, 196, 227)' }}>Contact</Link>
+        {!currentUser ? (
+          <Link to='/login' className='home-logout' onClick={handleLogin}>
             <h5>Login</h5>
           </Link>
         ) : (

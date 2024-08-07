@@ -64,3 +64,15 @@
   height: 250px;
   background-color: rgb(83, 155, 183);
 }
+
+@media screen and (max-width: 600px) {
+  .greetings{
+    top: 70px;
+    margin-left: 40px;
+    font-size: 18px;
+  }
+  .user-form {
+    width: 280px;
+    
+  }
+}

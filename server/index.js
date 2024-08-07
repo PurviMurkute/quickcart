@@ -15,6 +15,7 @@ import { getMakeup, postMakeup } from './Controllers/makeup.js';
 import { getHomeDecor, postHomeDecor } from './Controllers/homedecor.js';
 import { getContact, postContact } from './Controllers/contact.js';
 import { postLogin, postSignup } from './Controllers/user.js';
+import { getOrder, postOrder } from './Controllers/order.js';
 
 const app = express();
 app.use(cors());
@@ -83,6 +84,10 @@ app.get('/contacts', getContact)
 app.post('/signup', postSignup)
 
 app.post('/login', postLogin)
+
+app.post('/order', postOrder)
+
+app.get('/orders', getOrder)
 
 
 app.listen(PORT, ()=>{
