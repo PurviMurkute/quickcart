@@ -34,11 +34,34 @@
         margin: 2px 5px;
     }
     .popular-container{
-        padding: 0 22px !important;
+        padding: 0 2px !important;
     }
     .card-img:hover{
         width: 160px;
         height: 245px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 992px){
+    .popular-title{
+        font-size: 15px;
+    }
+    .card-img{
+        width: 205px;
+        height: 300px;
+    }
+    .trend-cards{
+        padding: 5px !important;
+    }
+    .popular-cards{
+        margin: 2px 5px;
+    }
+    .popular-container{
+        padding: 0 2px !important;
+    }
+    .card-img:hover{
+        width: 210px;
+        height: 305px;
     }
 }
 

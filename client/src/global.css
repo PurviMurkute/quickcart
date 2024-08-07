@@ -76,3 +76,13 @@
     
   }
 }
+@media screen and (min-width: 769px) and (max-width: 992px){
+  .greetings{
+    top: 72px;
+    margin-left: 40px;
+    font-size: 18px;
+  }
+  .user-form {
+    width: 290px;
+  }
+}
