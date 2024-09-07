@@ -24,9 +24,9 @@ function Footer() {
                         SHOPPING
                     </h4>
                     <ul className="nav flex-column">
-                        <li className="nav-item my-1 mx-3 text-decoration-none "><a href="/womens">Women</a></li>
-                        <li className="nav-item my-1 mx-3 text-decoration-none"><a href="/mens">Men</a></li>
-                        <li className="nav-item my-1 mx-3 text-decoration-none"><a href="/accessories">Accessories</a></li>
+                        <li className="nav-item my-1 mx-3 text-decoration-none "><a href="/shoes">Shoes</a></li>
+                        <li className="nav-item my-1 mx-3 text-decoration-none"><a href="/makeup">MakeUp</a></li>
+                        <li className="nav-item my-1 mx-3 text-decoration-none"><a href="/accesories">Accesories</a></li>
                         <li className="nav-item my-1 mx-3 text-decoration-none"><a href="/skincare">SkinCare</a></li>
 
                     </ul>

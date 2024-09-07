@@ -35,10 +35,12 @@ function Navbar() {
   return (
     <div>
       <nav className='navbar fixed-top d-flex justify-content-start shadow py-1' style={{ backgroundColor: "rgb(83, 155, 183)" }}>
-        <img src='q.png' alt='logo' className='shop-logo' />
-        <Link to='/' className='nav-item bg-dark mt-3 mx-5 py-0 px-2 rounded text-decoration-none' style={{ color: 'rgb(116, 196, 227)' }}>Home</Link>
-        <Link to='/about' className='nav-item bg-dark mt-3 mx-5 py-0 px-2 rounded text-decoration-none' style={{ color: 'rgb(116, 196, 227)' }}>About</Link>
-        <Link to='/contact' className='nav-item bg-dark mt-3 mx-5 rounded py-0 px-2 text-decoration-none' style={{ color: 'rgb(116, 196, 227)' }}>Contact</Link>
+        <img src='logo1.png' alt='logo' className='shop-logo' />
+        <Link to='/' className='nav-item text-dark mt-3 px-3 text-decoration-none fw-bold'>Home</Link>
+        <Link to='/about' className='nav-item text-dark mt-3 px-3 text-decoration-none fw-bold'>About</Link>
+        <Link to='/contact' className='nav-item text-dark mt-3 px-3 text-decoration-none fw-bold'>Contact</Link>
+        <Link to='/mens' className='nav-item text-dark mt-3 px-3 text-decoration-none fw-bold'>Men</Link>
+        <Link to='/womens' className='nav-item text-dark mt-3 px-3 text-decoration-none fw-bold'>Women</Link>
         {!currentUser ? (
           <Link to='/login' className='home-logout' onClick={handleLogin}>
             <h5>Login</h5>

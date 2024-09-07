@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
 dotenv.config()
-import { getHealth, postOffer, getOffers } from './Controllers/offerapi.js';
+import { getHealth, postOfferbrand, getOfferbrands } from './Controllers/offerapi.js';
 import { postWomen, getWomen } from './Controllers/women.js';
 import { postMens, getMens } from './Controllers/men.js';
 import { getSkincare, postSkincare } from './Controllers/skincare.js';
@@ -16,6 +16,7 @@ import { getHomeDecor, postHomeDecor } from './Controllers/homedecor.js';
 import { getContact, postContact } from './Controllers/contact.js';
 import { postLogin, postSignup } from './Controllers/user.js';
 import { getOrder, postOrder } from './Controllers/order.js';
+import { getOffers, postOffer } from './Controllers/offerid.js';
 
 const app = express();
 app.use(cors());
@@ -37,9 +38,9 @@ const PORT = process.env.PORT || 5000;
 
 app.get('/health', getHealth)
 
-app.post('/offer', postOffer)
+app.post('/offer', postOfferbrand)
 
-app.get('/offers', getOffers)
+app.get('/offers', getOfferbrands)
 
 app.post('/women', postWomen)
 
@@ -88,6 +89,10 @@ app.post('/login', postLogin)
 app.post('/order', postOrder)
 
 app.get('/orders', getOrder)
+
+app.post('/offer/:id', postOffer)
+
+app.get('/offers/:id', getOffers)
 
 
 app.listen(PORT, ()=>{

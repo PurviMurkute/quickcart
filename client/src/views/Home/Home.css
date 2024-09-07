@@ -5,6 +5,47 @@
     color: #fff !important;
 }
 
+.home-front-view{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.wlc-msg{
+    margin-top: 100px;
+}
+
+.feature-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.features{
+    width: 400px;
+    height: 130px;
+    border: 2px solid black;
+    position: relative;
+    margin: 15px;
+    padding: 10px;
+}
+.feature-icon{
+    width: 55px;
+    height: 40px;
+    position: absolute;
+    top: -30px;
+    left: 42%;
+    background-color: rgb(83, 155, 183);
+    padding: 2px 5px;
+    margin: 10px;
+    border: 2px solid #fff;
+}
+
+.feature-title{
+    margin-top: 25px
+}
+
+
 @media screen and (max-width: 600px){
     .wlc-msg{
         width: 350px !important;

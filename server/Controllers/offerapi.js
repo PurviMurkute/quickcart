@@ -7,7 +7,7 @@ const getHealth = (req, res) => {
     })
 }
 
-const postOffer = async (req, res) => {
+const postOfferbrand = async (req, res) => {
     const {
         image,
         logo,
@@ -15,34 +15,34 @@ const postOffer = async (req, res) => {
         discount
     } = req.body
 
-    const newOffer = new Offer({
+    const newOfferbrand = new Offer({
         image: image,
         logo: logo,
         category: category,
         discount: discount
     })
 
-    const savedOffer = await newOffer.save();
+    const savedOfferbrand = await newOfferbrand.save();
 
     res.json({
         success: true,
         message: "New offer added successfully",
-        data: savedOffer
+        data: savedOfferbrand
     })
 }
 
-const getOffers = async (req, res) => {
+const getOfferbrands = async (req, res) => {
 
-    const allOffers = await Offer.find().sort({updatedAt: -1})
+    const allOfferbrands = await Offer.find().sort({updatedAt: -1})
     res.json({
         success: true,
-        data: allOffers,
+        data: allOfferbrands,
         message: "all offers fetches successfully"
     })
 }
 
 export {
     getHealth,
-    postOffer,
-    getOffers
+    postOfferbrand,
+    getOfferbrands
 }

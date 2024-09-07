@@ -20,6 +20,7 @@ import Login from "./views/User-access/Login";
 
 import './global.css';
 import Order from "./views/BuyNow/Order";
+import Neutrogena from "./components/Offers/Neutrogena/Neutrogena";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -87,6 +88,10 @@ const router = createBrowserRouter([
     {
         path: "/order",
         element: <Order/>
+    },
+    {
+        path: "/neutrogena/:id",
+        element: <Neutrogena/>
     }
 
 ])

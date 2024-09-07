@@ -100,7 +100,7 @@ function Order() {
           className='btn'
           onClick={order}
         >
-          Submit
+          place order
         </button>
       </form>
 
