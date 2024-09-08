@@ -1,27 +1,52 @@
-
-
-.btn:hover{
+.btn:hover {
     background-color: rgb(45, 101, 123) !important;
     color: #fff !important;
 }
 
-.home-front-view{
+.home-front-view {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
+    
+}
+.home-container{
+    width: 350px;
+    height: 420px;
+    margin-top: 130px;
+    margin-bottom: 90px;
+    position: relative;
+}
+.home-img1{
+    width: 160px;
+    position: absolute;
+    top: -30px;
+    left: 25px;
+}
+.home-img2{
+    width: 180px;
+    position: absolute;
+    right: -25px;
+    top: 20%;
+}
+.home-img3{
+    width: 160px;
+    position: absolute;
+    bottom: -40px;
+    left: 25px;
 }
 
-.wlc-msg{
-    margin-top: 100px;
+.wlc-msg {
+    margin-top: 150px;
 }
 
-.feature-container{
+.feature-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.features{
+
+.features {
     width: 400px;
     height: 130px;
     border: 2px solid black;
@@ -29,7 +54,8 @@
     margin: 15px;
     padding: 10px;
 }
-.feature-icon{
+
+.feature-icon {
     width: 55px;
     height: 40px;
     position: absolute;
@@ -41,59 +67,66 @@
     border: 2px solid #fff;
 }
 
-.feature-title{
+.feature-title {
     margin-top: 25px
 }
 
 
-@media screen and (max-width: 600px){
-    .wlc-msg{
-        width: 350px !important;
-        height: 50px !important;
-        left: 0px !important;
-        padding: 5px !important;
-        margin-top: 5px !important;
+@media screen and (max-width: 600px) {
+    .wlc-msg {
+        margin-top: 50px;
+        padding: 0;
     }
-    .q-wlc{
-        font-size: 10px;
+
+    .home-container{
+        display: none;
     }
-    .wlc-description{
+
+    .q-wlc {
+        font-size: 10px !important;
+    }
+
+    .wlc-description {
         font-size: 6px;
         margin-top: -28px;
     }
-    .popular-heading{
+
+    .popular-heading {
         font-size: 18px;
         margin-top: 20px !important;
     }
-    .offer-heading{
+
+    .offer-heading {
         font-size: 18px;
         margin-top: 20px !important;
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 992px){
-    .wlc-msg{
+@media screen and (min-width: 601px) and (max-width: 992px) {
+    .wlc-msg {
         width: 420px !important;
         height: 80px !important;
         left: 20% !important;
         padding: 5px !important;
         margin-top: 10px !important;
     }
-    .q-wlc{
+
+    .q-wlc {
         font-size: 13px;
     }
-    .wlc-description{
+
+    .wlc-description {
         font-size: 8px;
         margin-top: -28px;
     }
-    .popular-heading{
+
+    .popular-heading {
         font-size: 18px;
         margin-top: 20px !important;
     }
-    .offer-heading{
+
+    .offer-heading {
         font-size: 18px;
         margin-top: 20px !important;
     }
 }
-
-

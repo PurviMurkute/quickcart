@@ -22,28 +22,24 @@ function Home() {
   }, [])
 
   return (
-    <div>
+    <div >
       <Navbar />
 
-      <div className='container home-front-view' style={{ backgroundColor: 'rgb(242, 242, 242)' }}>
-        <div className='col-6'>
-          <img src='fashion-removebg-preview.png' alt='shopping-img' className='shop-img ' width='100%' />
+      <div className='container home-front-view' style={{ backgroundColor: 'rgb(242, 242, 242)'}}>
+        <div className='col-6 home-container' style={{ backgroundColor: "rgb(83, 155, 183)" }}>
+          <img src='img2.avif' alt='home-img' className='home-img1'/>
+          <img src='img3.avif' alt='home-img' className='home-img2'/>
+          <img src='img1.avif' alt='home-img' className='home-img3'/>
         </div>
-        <div className='col-6 wlc-msg text-center p-2' style={{ color: 'rgb(45, 101, 123)' }}>
-          <h4 className='q-wlc'><i><b><u className='fs-4'> WELCOME TO QUICKCART </u></b>
+        <div className='col-6 wlc-msg text-center p-2 ' style={{ color: 'rgb(45, 101, 123)' }}>
+          <h4 className='q-wlc'><i><b className='fs-4'> WELCOME TO QUICKCART - <p>Your One-Stop Destination for Fashion & Lifestyle!</p> </b>
             <br />
-            <p className='fs-5'>🛍️ Discover a world of style and elegance with our curated collections 🛍️</p></i></h4>
+            <p className='fs-4'>🛍️ Discover a world of style and elegance with our curated collections 🛍️</p></i></h4><br />
           <h6 className='wlc-description text-center fs-6'>
-            Discover the latest trends and exclusive styles, curated just for you. Whether you're looking for fashion-forward clothing, timeless accessories, or must-have beauty products, we've got you covered. Shop with ease and enjoy seamless browsing, fast shipping, and unbeatable prices. Elevate your wardrobe today and make every outfit count. Your next style upgrade is just a click away!<br />
-
-            Happy Shopping!</h6><br />
-          <h5 className='q-wlc'><b className='fs-4'> Explore our diverse range of products </b></h5>
-          <ul type='circle'>
-            <li><b>Trendy Apparel -</b> From everyday basics to runway-inspired looks, find outfits that speak to your style and make you feel confident.</li>
-            <li><b>Accessories & Jewelry -</b> Elevate any outfit with our collection of statement pieces and understated classics.</li>
-            <li><b>Footwear -</b> From stylish sneakers to sophisticated heels, step into comfort and fashion with our latest footwear collection.</li>
-            <li><b>Beauty Products -</b> Discover skincare and beauty must-haves that will enhance your natural glow and keep you feeling fabulous.</li>
-          </ul>
+            Discover the latest trends and exclusive styles, curated just for you. Whether you're looking for fashion-forward clothing, timeless accessories, or must-have beauty products, we've got you covered. Shop with ease and enjoy seamless browsing, fast shipping, and unbeatable prices. Elevate your wardrobe today and make every outfit count. Your next style upgrade is just a click away!
+            <br /><br />
+            <p className='fs-5'>Happy Shopping!</p></h6>
+            <hr/>
         </div>
       </div>
       <div className='container'>
