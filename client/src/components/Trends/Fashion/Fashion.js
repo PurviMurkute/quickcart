@@ -6,22 +6,22 @@ import Footer from '../../Footer/Footer';
 
 function Fashion() {
   return (
-    <div className='fashion-container position-relative bg-light-subtle row position-relative'>
+    <div className='fashion-container position-relative bg-light-subtle row '>
       <div className='' style={{ height: '30px', backgroundColor: 'rgb(83, 155, 183)' }}></div>
       <div className='f-container'>
         <div className='col-6'>
-          <img src='f4.avif' alt='f-img' className='' width='90%' />
+          <img src='f4.avif' alt='f-img' className='fashion1-img' width='80%' height='80%' />
         </div>
         <div className='col-6'>
-          <img src='f5.avif' alt='fashion-img' className='' width='90%' />
+          <img src='f5.avif' alt='fashion-img' className='fashion-img' width='80%' height='80%' />
         </div>
+        <h1 className='fas-title fw-bold position-absolute bg-light m-5 p-3 text-center fs-3 rounded' style={{ color: 'rgb(45, 101, 123)' }}><i>YOUR FASHION SEARCH STARTS HERE !</i></h1>
       </div>
-
-      <h1 className='fas-title fw-bold position-absolute bg-light m-5 p-3 text-center fs-2' style={{ width: '380px', height: '150px', color: 'rgb(45, 101, 123)', top: '10px', left: '34%' }}><i>YOUR FASHION SEARCH STARTS HERE !</i></h1>
-
-      <h4 className='para bg-light px-5 py-4 text-center shadow-lg d-block my-5 mx-auto fs-4' style={{ width: '1000px', height: '240px', color: 'rgb(45, 101, 123)' }}><i>
-        Fashion is a dynamic and ever-evolving form of self-expression that reflects cultural, social, and individual identities. It encompasses clothing, accessories, and styles that are influenced by trends, history, and personal taste. Fashion not only shapes how people present themselves to the world but also serves as a medium for creativity and innovation. Through fashion, individuals can convey their personalities, beliefs, and emotions, making it a powerful tool for communication and connection.
-      </i></h4>
+      <div className='fashion-para-container'>
+        <h4 className='para bg-light px-3 py-3 text-center shadow my-3 fs-4' style={{ color: 'rgb(45, 101, 123)' }}><i>
+          Fashion is a dynamic and ever-evolving form of self-expression that reflects cultural, social, and individual identities. It encompasses clothing, accessories, and styles that are influenced by trends, history, and personal taste. Fashion not only shapes how people present themselves to the world but also serves as a medium for creativity and innovation. Through fashion, individuals can convey their personalities, beliefs, and emotions, making it a powerful tool for communication and connection.
+        </i></h4>
+      </div>
 
       <Link to='/womens'>
         <div className='women-fashion-container d-flex justify-content-center p-5 position-relative shadow-lg' style={{ backgroundColor: 'rgb(83, 155, 183)' }}>
