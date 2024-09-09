@@ -10,10 +10,10 @@ function Fashion() {
       <div className='' style={{ height: '30px', backgroundColor: 'rgb(83, 155, 183)' }}></div>
       <div className='f-container'>
         <div className='col-6'>
-          <img src='f4.avif' alt='f-img' className='fashion1-img' width='80%' height='80%' />
+          <img src='f4.avif' alt='f-img' className='fashion1-img' width='90%' height='90%' />
         </div>
         <div className='col-6'>
-          <img src='f5.avif' alt='fashion-img' className='fashion-img' width='80%' height='80%' />
+          <img src='f5.avif' alt='fashion-img' className='fashion-img' width='90%' height='90%' />
         </div>
         <h1 className='fas-title fw-bold position-absolute bg-light m-5 p-3 text-center fs-3 rounded' style={{ color: 'rgb(45, 101, 123)' }}><i>YOUR FASHION SEARCH STARTS HERE !</i></h1>
       </div>
@@ -24,19 +24,11 @@ function Fashion() {
       </div>
 
       <Link to='/womens'>
-        <div className='women-fashion-container d-flex justify-content-center p-5 position-relative shadow-lg' style={{ backgroundColor: 'rgb(83, 155, 183)' }}>
-          <div className='p-3'>
-            <img src='f6.webp' alt='fashion6' height='250px' width='170px' />
-          </div>
-          <div className='p-3'>
-            <img src='f7.jpeg' alt='fashion6' height='250px' width='170px' />
-          </div>
-          <div className='p-3'>
-            <img src='f8.avif' alt='fashion6' height='250px' width='170px' />
-          </div>
-          <div className='p-3'>
-            <img src='fashionclothes.jpg' alt='fashion6' height='250px' width='170px' />
-          </div>
+        <div className='fashionpage-container d-flex justify-content-center p-5 position-relative shadow-lg' style={{ backgroundColor: 'rgb(83, 155, 183)' }}>
+            <img src='f6.webp' alt='fashion6' className='f-img p-3' height='250px' width='170px' />
+            <img src='f7.jpeg' alt='fashion6' className='f-img p-3' height='250px' width='170px' />
+            <img src='f8.avif' alt='fashion6' className='f-img p-3' height='250px' width='170px' />
+            <img src='fashionclothes.jpg' alt='fashion6' className='f-img p-3'  height='250px' width='170px' />
           <p className='position-absolute top-0 m-3 text-white'><b>WOMEN'S COLLECTION</b></p>
           <br />
         </div>
@@ -45,19 +37,11 @@ function Fashion() {
       <hr />
       <br />
       <Link to='/mens'>
-        <div className='women-fashion-container d-flex justify-content-center p-5 position-relative shadow-lg' style={{ backgroundColor: 'rgb(83, 155, 183)' }}>
-          <div className='p-3'>
-            <img src='f9.webp' alt='fashion6' height='250px' width='170px' />
-          </div>
-          <div className='p-3'>
-            <img src='f10.webp' alt='fashion6' height='250px' width='170px' />
-          </div>
-          <div className='p-3'>
-            <img src='f11.avif' alt='fashion6' height='250px' width='170px' />
-          </div>
-          <div className='p-3'>
-            <img src='f12.jpeg' alt='fashion6' height='250px' width='170px' />
-          </div>
+        <div className='fashionpage-container d-flex justify-content-center p-5 position-relative shadow-lg' style={{ backgroundColor: 'rgb(83, 155, 183)' }}>
+            <img src='f9.webp' alt='fashion6' className='f-img p-3' height='250px' width='170px' />
+            <img src='f10.webp' alt='fashion6' className='f-img p-3' height='250px' width='170px' />
+            <img src='f11.avif' alt='fashion6' className='f-img p-3' height='250px' width='170px' />
+            <img src='f12.jpeg' alt='fashion6' className='f-img p-3' height='250px' width='170px' />
           <p className='position-absolute top-0 m-3 text-white'><b>MEN'S COLLECTION</b></p>
         </div>
       </Link>

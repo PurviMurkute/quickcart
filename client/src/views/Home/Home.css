@@ -74,7 +74,7 @@
 
 @media screen and (max-width: 600px) {
     .wlc-msg {
-        margin-top: 50px;
+        margin-top: 80px;
         padding: 0;
     }
 
@@ -82,13 +82,22 @@
         display: none;
     }
 
-    .q-wlc {
-        font-size: 10px !important;
+    .greeting-msg{
+        font-size: 25px !important;
+    }
+
+    .about-quickcart{
+        font-size: 20px !important;
     }
 
     .wlc-description {
-        font-size: 6px;
+        font-size: 13px !important;
         margin-top: -28px;
+    }
+
+    .home-front-view{
+        width: 470px;
+        margin-left: -55px;
     }
 
     .popular-heading {
@@ -99,6 +108,13 @@
     .offer-heading {
         font-size: 18px;
         margin-top: 20px !important;
+    }
+    .feature-icon {
+        left: 38%;
+    }
+    
+    .feature-title {
+        margin-top: 15px
     }
 }
 

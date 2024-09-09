@@ -32,9 +32,9 @@ function Home() {
           <img src='img1.avif' alt='home-img' className='home-img3'/>
         </div>
         <div className='col-6 wlc-msg text-center p-2 ' style={{ color: 'rgb(45, 101, 123)' }}>
-          <h4 className='q-wlc'><i><b className='fs-4'> WELCOME TO QUICKCART - <p>Your One-Stop Destination for Fashion & Lifestyle!</p> </b>
+          <h4 className='q-wlc'><i><b className='fs-4 greeting-msg'> WELCOME TO QUICKCART - <p>Your One-Stop Destination for Fashion & Lifestyle!</p> </b>
             <br />
-            <p className='fs-4'>🛍️ Discover a world of style and elegance with our curated collections 🛍️</p></i></h4><br />
+            <p className='fs-4 about-quickcart'>🛍️ Discover a world of style and elegance with our curated collections 🛍️</p></i></h4><br />
           <h6 className='wlc-description text-center fs-6'>
             Discover the latest trends and exclusive styles, curated just for you. Whether you're looking for fashion-forward clothing, timeless accessories, or must-have beauty products, we've got you covered. Shop with ease and enjoy seamless browsing, fast shipping, and unbeatable prices. Elevate your wardrobe today and make every outfit count. Your next style upgrade is just a click away!
             <br /><br />
@@ -43,7 +43,7 @@ function Home() {
         </div>
       </div>
       <div className='container'>
-        <h5 className='popular-heading text-center fst-italic mt-4 p-3 fw-bold' style={{ color: "rgb(45, 101, 123)" }}>WHY SHOP WITH US?</h5>
+        <h5 className='popular-heading text-center fst-italic mt-5 p-3 fw-bold' style={{ color: "rgb(45, 101, 123)" }}>WHY SHOP WITH US?</h5>
         <div className='feature-container'>
           <div className='features rounded shadow ' style={{ backgroundColor: "rgb(83, 155, 183)" }}>
             <img src='quality-icon.png' alt='icon' className='feature-icon rounded' />
