@@ -32,7 +32,7 @@ function Home() {
           <img src='img1.avif' alt='home-img' className='home-img3'/>
         </div>
         <div className='col-6 wlc-msg text-center p-2 ' style={{ color: 'rgb(45, 101, 123)' }}>
-          <h4 className='q-wlc'><i><b className='fs-4 greeting-msg'> WELCOME TO QUICKCART - <p>Your One-Stop Destination for Fashion & Lifestyle!</p> </b>
+          <h4 className='q-wlc'><i><b className='fs-4 greeting-msg'> WELCOME TO QUICKCART <p>Your One-Stop Destination for Fashion & Lifestyle!</p> </b>
             <br />
             <p className='fs-4 about-quickcart'>🛍️ Discover a world of style and elegance with our curated collections 🛍️</p></i></h4><br />
           <h6 className='wlc-description text-center fs-6'>

@@ -30,5 +30,19 @@
     text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+    .div{
+        height: 200px !important;
+    }
+    .contact-msg{
+        font-size: 20px;
+        left: -20%;
+    }
+    .contact-form{
+        margin-top: -40px !important;
+        width: 270px !important;
+    }
+}
+
 
 

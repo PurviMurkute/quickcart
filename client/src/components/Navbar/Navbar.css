@@ -39,13 +39,13 @@
 
     }
     .nav-item{
-        margin: 2px 3px !important;
+        margin: 2px 2px !important;
         padding: 1px 3px !important;
         font-size: 10px;
     }
     .home-logout{
-        font-size: 10px !important;
-        right: 5px;
+        font-size: 8px !important;
+        right: 2px;
     }
 
 }

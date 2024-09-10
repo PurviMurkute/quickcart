@@ -44,26 +44,58 @@
     }
     .about-heading{
         right: 10% !important;
-        left: 40% !important;
+        left: 38% !important;
     }
     .about-img{
         height: 150px;
         width: 250px;
         margin-top: -10px;
+        margin-left: -10px;
     }
     .img-p-container{
-        right: 22%;
-        left: 22%;
+        right: 18%;
+        left: 18%;
     }
     .about-para{
         font-size: 12px !important;
         margin-top: -5px;
     }
     .greeting-para{
-        margin-top: 380px;
+        margin-top: 400px;
         padding: 10px 20px;
     }
     .gree-p{
         font-size: 15px !important;
     }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .div{
+        height: 200px !important;
+    }
+    .about-heading{
+        right: 10% !important;
+        left: 45% !important;
+    }
+    .about-img{
+        height: 180px;
+        width: 300px;
+        margin-top: -10px;
+        margin-left: 70px;
+    }
+    .img-p-container{
+        right: 20%;
+        left: 25%;
+    }
+    .about-para{
+        font-size: 15px !important;
+        margin-top: -5px;
+    }
+    .greeting-para{
+        margin-top: 400px;
+        padding: 10px 20px;
+    }
+    .gree-p{
+        font-size: 15px !important;
+    }
+
 }

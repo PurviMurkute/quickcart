@@ -15,7 +15,7 @@ function Fashion() {
         <div className='col-6'>
           <img src='f5.avif' alt='fashion-img' className='fashion-img' width='90%' height='90%' />
         </div>
-        <h1 className='fas-title fw-bold position-absolute bg-light m-5 p-3 text-center fs-3 rounded' style={{ color: 'rgb(45, 101, 123)' }}><i>YOUR FASHION SEARCH STARTS HERE !</i></h1>
+        <h1 className='fas-title fw-bold position-absolute bg-light m-5 p-3 text-center fs-4 rounded' style={{ color: 'rgb(45, 101, 123)' }}><i>YOUR FASHION SEARCH STARTS HERE !</i></h1>
       </div>
       <div className='fashion-para-container'>
         <h4 className='para bg-light px-3 py-3 text-center shadow my-3 fs-4' style={{ color: 'rgb(45, 101, 123)' }}><i>

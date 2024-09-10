@@ -72,32 +72,53 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .wlc-msg {
-        margin-top: 80px;
+        margin-top: 70px;
         padding: 0;
     }
 
     .home-container{
-        display: none;
+        width: 180px;
+        height: 250px;
+        left: 280px;
+        top: 60px;
+    }
+    .home-img1{
+        width: 100px;
+        top: -20px;
+        left: 10px;
+    }
+    .home-img2{
+        width: 100px;
+        right: -35px;
+        top: 20%;
+    }
+    .home-img3{
+        width: 100px;
+        left: 10px;
     }
 
     .greeting-msg{
-        font-size: 25px !important;
+        font-size: 20px !important;
+        text-align: center;
     }
 
     .about-quickcart{
         font-size: 20px !important;
+        margin-top: 290px;
+        margin-bottom: 40px;
+        text-align: center;
     }
 
     .wlc-description {
-        font-size: 13px !important;
-        margin-top: -28px;
+        font-size: 15px !important;
+        margin-top: -40px;
     }
 
     .home-front-view{
-        width: 470px;
-        margin-left: -55px;
+        width: 660px;
+        margin-left: -270px;
     }
 
     .popular-heading {
@@ -118,22 +139,44 @@
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 992px) {
+@media screen and (min-width: 601px) and (max-width: 768px) {
     .wlc-msg {
-        width: 420px !important;
-        height: 80px !important;
-        left: 20% !important;
-        padding: 5px !important;
-        margin-top: 10px !important;
+        margin-top: 80px;
+        padding: 0;
     }
 
-    .q-wlc {
-        font-size: 13px;
+    .home-container{
+        width: 230px;
+        height: 290px;
+        top: 20px;
+    }
+
+    .home-img1{
+        width: 110px;
+        top: -15px;
+        left: 10px;
+    }
+    .home-img2{
+        width: 115px;
+        right: -10px;
+        top: 20%;
+    }
+    .home-img3{
+        width: 110px;
+        left: 10px;
+    }
+
+    .greeting-msg{
+        font-size: 18px !important;
+    }
+
+    .about-quickcart{
+        font-size: 15px !important;
     }
 
     .wlc-description {
-        font-size: 8px;
-        margin-top: -28px;
+        font-size: 13px !important;
+       
     }
 
     .popular-heading {
@@ -144,5 +187,12 @@
     .offer-heading {
         font-size: 18px;
         margin-top: 20px !important;
+    }
+    .feature-icon {
+        left: 38%;
+    }
+    
+    .feature-title {
+        margin-top: 15px
     }
 }
