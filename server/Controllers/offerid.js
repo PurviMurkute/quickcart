@@ -1,11 +1,12 @@
 import offerId from "../models/OfferId.js";
 
 const postOffer = async (req, res) => {
-    const {image, title, actualprice, offerprice, discount} = req.body
+    const {image, title, quantity, actualprice, offerprice, discount} = req.body
 
     const newOffer = new offerId({
         image: image,
         title: title,
+        quantity: quantity,
         actualprice: actualprice,
         offerprice: offerprice,
         discount: discount

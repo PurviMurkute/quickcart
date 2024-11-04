@@ -39,8 +39,8 @@ function Navbar() {
         <Link to='/' className='nav-item text-dark mt-3 px-3 text-decoration-none fw-bold'>Home</Link>
         <Link to='/about' className='nav-item text-dark mt-3 px-3 text-decoration-none fw-bold'>About</Link>
         <Link to='/contact' className='nav-item text-dark mt-3 px-3 text-decoration-none fw-bold'>Contact</Link>
-        <Link to='/mens' className='nav-item text-dark mt-3 px-3 text-decoration-none fw-bold'>Men</Link>
-        <Link to='/womens' className='nav-item text-dark mt-3 px-3 text-decoration-none fw-bold'>Women</Link>
+        <Link to='/products/Mens' className='nav-item text-dark mt-3 px-3 text-decoration-none fw-bold'>Men</Link>
+        <Link to='/products/women' className='nav-item text-dark mt-3 px-3 text-decoration-none fw-bold'>Women</Link>
         {!currentUser ? (
           <Link to='/login' className='home-logout' onClick={handleLogin}>
             <h5>Login</h5>

@@ -9,6 +9,10 @@ const offeridSchema = new Schema({
         type: String,
         required: true
     }, 
+    quantity: {
+        type: String,
+        required: true
+    },
     actualprice: {
         type: Number,
         required: true

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import Navbar from '../../components/Navbar/Navbar';
-import Trends from '../../components/Trends/Popular/Trends';
-import Offers from '../../components/Offers/Offer/Offers';
+import Offer from '../../components/Offer/Offer';
 import axios from 'axios';
 import Footer from '../../components/Footer/Footer';
+import { Link } from 'react-router-dom';
 
 
 function Home() {
@@ -32,7 +32,7 @@ function Home() {
           <img src='img1.avif' alt='home-img' className='home-img3'/>
         </div>
         <div className='col-6 wlc-msg text-center p-2 ' style={{ color: 'rgb(45, 101, 123)' }}>
-          <h4 className='q-wlc'><i><b className='fs-4 greeting-msg'> WELCOME TO QUICKCART <p>Your One-Stop Destination for Fashion & Lifestyle!</p> </b>
+          <h4 className='q-wlc'><i><b className='fs-4 greeting-msg text-center'> WELCOME TO QUICKCART <p>Your One-Stop Destination for Fashion & Lifestyle!</p> </b>
             <br />
             <p className='fs-4 about-quickcart'>🛍️ Discover a world of style and elegance with our curated collections 🛍️</p></i></h4><br />
           <h6 className='wlc-description text-center fs-6'>
@@ -69,13 +69,70 @@ function Home() {
       </div>
 
       <h5 className='popular-heading text-center text-white fst-italic mt-3 p-2 fw-bold' style={{ backgroundColor: "rgb(83, 155, 183)" }}>POPULAR IN OUR STORE</h5>
-      <Trends />
+      <div className='container trend-cards' style={{ backgroundColor: 'rgb(242, 242, 242)'}} >
+            <div className='popular-cards'>
+            <h4 className='popular-title position-absolute fst-italic mt-5  ms-5'>Fashion..</h4>
+                <Link to='/fashion'>
+                <img src='f1.avif' alt='trending-img' className='card-img my-3 p-1 rounded border border-dark shadow bg-light' />
+                </Link>
+            </div>
+
+            <div className='popular-cards'>
+            <h4 className='popular-title position-absolute fst-italic mt-5  ms-5'>SkinCare..</h4>
+                <Link to='/products/skincare'>
+                <img src='sc1.avif' alt='trending-img' className='card-img my-3 p-1 rounded border border-dark shadow bg-light' />
+                </Link>
+            </div>
+
+            <div className='popular-cards'>
+            <h4 className='popular-title position-absolute fst-italic mt-5 ms-5'>Shoes..</h4>
+                <Link to='/products/shoes'>
+                <img src='shoes.avif' alt='trending-img' className='card-img my-3 p-1 rounded border border-dark shadow bg-light' />
+                </Link>
+            </div>
+
+            <div className='popular-cards'>
+            <h4 className='popular-title position-absolute fst-italic mt-5 ms-5'>HairCare..</h4>
+                <Link to='/products/haircare'>
+                <img src='haircare.avif' alt='trending-img' className='card-img my-3 p-1 rounded border border-dark shadow bg-light' />
+                </Link>
+            </div>
+
+            <div className='popular-cards'>
+            <h4 className='popular-title position-absolute fst-italic mt-5 ms-5'>Accesories..</h4>
+                <Link to='/products/accesories'>
+                <img src='accesories.avif' alt='trending-img' className='card-img my-3 p-1 rounded border border-dark shadow bg-light' />
+                </Link>
+            </div>
+
+            <div className='popular-cards'>
+            <h4 className='popular-title position-absolute fst-italic mt-5 ms-5'>Watches..</h4>
+                <Link to='/products/watches'>
+                <img src='watch.avif' alt='trending-img' className='card-img my-3 p-1 rounded border border-dark shadow bg-light' />
+                </Link>
+            </div>
+
+            <div className='popular-cards'>
+            <h4 className='popular-title position-absolute fst-italic mt-5 ms-5'>Makeup..</h4>
+                <Link to='/products/makeup'>
+                <img src='makeup.avif' alt='trending-img' className='card-img my-3 p-1 rounded border border-dark shadow bg-light' />
+                </Link>
+            </div>
+            
+            <div className='popular-cards'>
+            <h4 className='popular-title position-absolute fst-italic mt-5 ms-5'>Home Decor..</h4>
+                <Link to='/products/HomeDecor'>
+                <img src='homedecor.avif' alt='trending-img' className='card-img my-3 p-1 rounded border border-dark shadow bg-light' />
+                </Link>
+            </div>
+        </div>
       <h5 className='offer-heading text-center text-white fst-italic m-3 mt-3 p-2 fw-bold' style={{ backgroundColor: "rgb(83, 155, 183)" }}>OFFERS ON TOP BRANDS</h5>
 
       <div className="container">
         <div className="offer-container row px-5 py-3 my-3">
           {offers.map((offer, i) => {
             const {
+              _id,
               image,
               logo,
               category,
@@ -83,7 +140,8 @@ function Home() {
             } = offer
 
             return (
-              <div key={i} className="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-3 shadow rounded"><Offers
+              <div key={i} className="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-3 shadow rounded"><Offer
+                _id={_id}
                 image={image}
                 logo={logo}
                 category={category}

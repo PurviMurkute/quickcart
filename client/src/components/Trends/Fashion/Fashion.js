@@ -23,7 +23,7 @@ function Fashion() {
         </i></h4>
       </div>
 
-      <Link to='/womens'>
+      <Link to='/products/women'>
         <div className='fashionpage-container d-flex justify-content-center p-5 position-relative shadow-lg' style={{ backgroundColor: 'rgb(83, 155, 183)' }}>
             <img src='f6.webp' alt='fashion6' className='f-img p-3' height='250px' width='170px' />
             <img src='f7.jpeg' alt='fashion6' className='f-img p-3' height='250px' width='170px' />
@@ -36,7 +36,7 @@ function Fashion() {
       <br />
       <hr />
       <br />
-      <Link to='/mens'>
+      <Link to='/products/Mens'>
         <div className='fashionpage-container d-flex justify-content-center p-5 position-relative shadow-lg' style={{ backgroundColor: 'rgb(83, 155, 183)' }}>
             <img src='f9.webp' alt='fashion6' className='f-img p-3' height='250px' width='170px' />
             <img src='f10.webp' alt='fashion6' className='f-img p-3' height='250px' width='170px' />

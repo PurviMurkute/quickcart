@@ -24,10 +24,10 @@ function Footer() {
                         SHOPPING
                     </h4>
                     <ul className="nav flex-column">
-                        <li className="nav-item my-1 mx-3 text-decoration-none "><a href="/shoes">Shoes</a></li>
-                        <li className="nav-item my-1 mx-3 text-decoration-none"><a href="/makeup">MakeUp</a></li>
-                        <li className="nav-item my-1 mx-3 text-decoration-none"><a href="/accesories">Accesories</a></li>
-                        <li className="nav-item my-1 mx-3 text-decoration-none"><a href="/skincare">SkinCare</a></li>
+                        <li className="nav-item my-1 mx-3 text-decoration-none "><a href="/products/shoes">Shoes</a></li>
+                        <li className="nav-item my-1 mx-3 text-decoration-none"><a href="/products/makeup">MakeUp</a></li>
+                        <li className="nav-item my-1 mx-3 text-decoration-none"><a href="/products/accesories">Accesories</a></li>
+                        <li className="nav-item my-1 mx-3 text-decoration-none"><a href="/products/skincare">SkinCare</a></li>
 
                     </ul>
                 </div>
