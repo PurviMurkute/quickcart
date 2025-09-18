@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Footer from './../../components/Footer/Footer.js';
-import {useParams} from "react-router-dom"
+import {useNavigate, useParams} from "react-router-dom"
+import toast from 'react-hot-toast';
 
 function Products() {
 
@@ -10,10 +11,20 @@ function Products() {
 
   const {category} =  useParams()
 
+  const navigate = useNavigate();
+
   const loadProducts = async () => {
+    try {
     const response = await axios.get(`${process.env.REACT_APP_API_URL}/products?category=${category}`)
 
-    setProducts(response.data.data)
+    if(response.data.success){
+      setProducts(response.data.data)
+    }else{
+      toast.error(response.data.message);
+    }    
+    } catch (error) {
+      toast.error(error?.response?.data?.message || error?.message)
+    }
   }
 
   useEffect(() => {
@@ -30,9 +41,9 @@ function Products() {
 
   const handleBuyNow = () => {
     if (currentUser) {
-      window.location.href = '/order';
+      navigate('/order');
     } else {
-      window.location.href = '/login';
+      navigate('/login');
     }
   };
 
@@ -79,7 +90,6 @@ const Productss = ({ image, title, description, quantity, producttype, price, on
           <button type='button' onClick={onBuyNow} className='atc-btn d-block my-0 mx-auto mt-3 border border-0 py-1 px-2 my-1 mx-3 rounded' style={{ backgroundColor: "rgb(83, 155, 183)" }}>Buy Now</button>
         </div>
       </div>
-    
   )
 }
 

@@ -14,7 +14,7 @@ import {
 } from "./Controllers/products.js";
 import { getContact, postContact } from "./Controllers/contact.js";
 import { postLogin, postSignup } from "./Controllers/user.js";
-import { getOrder, postOrder } from "./Controllers/order.js";
+import { getOrderByUser, postOrder } from "./Controllers/order.js";
 import { getOffers, postOffer } from "./Controllers/offerid.js";
 
 const app = express();
@@ -54,7 +54,7 @@ app.post("/login", postLogin);
 
 app.post("/order", postOrder);
 
-app.get("/orders", getOrder);
+app.get("/orders/:userId", getOrderByUser);
 
 app.post("/offer/:category", postOffer);
 
