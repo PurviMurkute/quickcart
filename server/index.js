@@ -56,9 +56,9 @@ app.post("/order", postOrder);
 
 app.get("/orders", getOrder);
 
-app.post("/offer/:id", postOffer);
+app.post("/offer/:category", postOffer);
 
-app.get("/offers/:id", getOffers);
+app.get("/offers/:category", getOffers);
 
 app.listen(PORT, () => {
   console.log(`server is running on PORT ${PORT}`);

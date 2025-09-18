@@ -1,7 +1,15 @@
 import User from "../models/User.js"
 
 const postSignup = async (req, res) => {
-    const { name, email, password } = req.body
+    const { name, email, password } = req.body;
+
+    if(!name || !email || !password){
+        return res.status(400).json({
+            success: false,
+            data: null,
+            message: "All fields are required"
+        })
+    }
 
     const user = new User({
         name: name,
@@ -10,7 +18,6 @@ const postSignup = async (req, res) => {
     });
 
     try{
-
         const savedUser = await user.save();
 
         res.json({
@@ -26,7 +33,6 @@ const postSignup = async (req, res) => {
             data: null
         })
     }
-
 }
 
 const postLogin = async (req, res) => {

@@ -1,9 +1,9 @@
 import React from "react";
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./views/Home/Home";
-import Fashion from "./components/Trends/Fashion/Fashion";
+import Fashion from "./components/Fashion/Fashion";
 import About from "./views/About/About";
 import Contact from "./views/Contact/Contact";
 import Signup from "./views/User-access/Signup";
@@ -52,7 +52,7 @@ const router = createBrowserRouter([
         element: <Order/>
     },
     {
-        path: "/offers/:id",
+        path: "/offers/:category",
         element: <Offers/>
     }
 

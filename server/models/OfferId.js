@@ -10,8 +10,7 @@ const offeridSchema = new Schema({
         required: true
     }, 
     quantity: {
-        type: String,
-        required: true
+        type: String
     },
     actualprice: {
         type: Number,
@@ -22,6 +21,10 @@ const offeridSchema = new Schema({
         required: true
     },
     discount: {
+        type: String,
+        required: true
+    },
+    category: {
         type: String,
         required: true
     }

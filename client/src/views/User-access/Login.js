@@ -6,7 +6,6 @@ import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
 
 function Login() {
-
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
@@ -21,7 +20,7 @@ function Login() {
 
       localStorage.setItem('currentUser', JSON.stringify(response.data.data))
 
-      toast.loading('redirecting to dashboard...')
+      toast.loading('redirecting to Home...')
 
       setTimeout(() => {
         window.location.href = '/'

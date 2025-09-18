@@ -90,7 +90,7 @@ function Order() {
             setUser({ ...user, paymentMethod: e.target.value })
           }}
           >
-          <option value='payment-method'>Payment Method</option>
+          <option value=''>Payment Method</option>
           <option value='cash-on-dilevery'>Cash on Dilevery</option>
         </select>
 
